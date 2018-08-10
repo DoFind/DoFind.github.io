@@ -1,0 +1,627 @@
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('./font/lato-reg-webfont-webfont.eot');
+    src: url('./font/lato-reg-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('./font/lato-reg-webfont-webfont.woff') format('woff'), url('./font/lato-reg-webfont-webfont.ttf') format('truetype'), url('./font/lato-reg-webfont-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('./lato-bla-webfont.eot');
+    src: url('./lato-bla-webfont.eot?#iefix') format('embedded-opentype'), url('./lato-bla-webfont.woff') format('woff'), url('./lato-bla-webfont.ttf') format('truetype'), url('./lato-bla-webfont.svg#latoblack') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+body {
+	font-family: 'latoregular';
+	font-size: 14px;
+	overflow: hidden;
+}
+
+
+/* ============================================
+
+	通用设置
+=============================================== */
+
+/* 需要旋转的 3D 按钮 */
+.button-3d .state {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.button-3d .state1 {
+	color: #F2F2F2;
+	background: #32494E;
+}
+.button-3d .state2 {
+	background: #fff;
+	color: #32494E;
+}
+
+
+/* 元素居中显示 */
+.center-h {
+	display: table;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.center-v {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* ============================================
+	header
+=============================================== */
+
+header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+
+header .menu {
+	
+	position: absolute;
+	left: 1100px;
+	right: 22px;
+	top: 22px;
+	height: 78px;
+	min-width: 784px;
+    background: #53D491;
+    opacity: 0;
+}
+
+header .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 264px;
+	min-width: 520px;
+}
+
+header .logo, header .logo a, header .nav, header .nav li, header .nav a, header .language {
+	display: inline-block;
+}
+
+header .logo {
+	
+	margin: 24px 0 0 20px;
+	width: 123px;
+	height: 78px;
+}
+header .logo a {
+	width: 123px;
+	height: 31px;
+	background: url('../../public/img/logo.png') 0 0 no-repeat;
+}
+header .nav {
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 57px;
+	min-width: 200px;
+	opacity: 0;
+}
+header .nav a {
+	
+	padding: 0 20px;
+	height: 78px;
+	line-height: 78px;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+header .nav a, header .language a {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+header .language {
+	
+	position: absolute;
+	top: 16px;
+	right: 10px;
+}
+
+header .language .select {
+	
+	display: block;
+	width: 47px;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	color: #F2F2F2;
+	background: rgba(0,0,0,.12);
+}
+header .language .dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #fff;
+	opacity: 0;
+}
+header .language .dropdown a {
+	display: block;
+	width: 47px;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	color: #32494E;
+}
+
+header .button-start {
+	position: absolute;
+	right: 7px;
+	top: 7px;
+	width: 250px;
+	height: 64px;
+	line-height: 64px;
+}
+
+header .line {
+	position: absolute;
+	height: 1px;
+	min-width: 10px;
+	background: #fff;
+	bottom: 26px;
+	left: 500px;
+	opacity: 0;
+}
+
+header .menu-state2 {
+	background: #3D3B59;
+}
+header .menu-state2 .logo a {
+	background-position: 0 -56px;
+}
+header .menu-state2 .button-start .state1 {
+	background: #48BD82;
+}
+
+header .menu-state3 {
+	background: #ED7F6A;
+}
+header .menu-state3 .logo a {
+	background-position: 0 -109px;
+}
+header .menu-state3 .button-start .state1 {
+	background: #48BD82;
+}
+
+
+/* ============================================
+	swiper 
+=============================================== */
+.swiper-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #eee;
+	overflow: hidden;
+}
+
+/* 溢出隐藏 */
+.scene {
+	overflow: hidden;
+}
+
+.light {
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	margin-left: -784px;
+	width: 1569px !important;
+}
+.middle-bg {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 50%;
+	height: 100%;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+/* ==========
+	scene1
+=============*/
+.scene1 {
+
+	background: #4BC587;
+}
+.scene1 .logo {
+	display: block;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	margin-left: -98px;
+	max-width: 197px;
+	height: auto;
+	opacity: 0;
+}
+.scene1 .left,
+.scene1 .right {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -160px;
+	max-width: 191px;
+	height: auto;
+}
+.scene1 .left {
+	left: 50%;
+	margin-left: -520px;
+    -webkit-transform-origin: right bottom 0px;
+    -webkit-transform: rotateZ(-90deg);
+}
+.scene1 .right {
+	right: 50%;
+	margin-right: -520px;
+    -webkit-transform-origin: left bottom 0px;
+    -webkit-transform: rotateZ(90deg);
+}
+.scene1 .scene1-1 {
+	position: absolute;
+	top: 0;
+	padding: 0 20px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.scene1 .scene1-1 img {
+	display: inline-block;
+	-webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: center center 0px;
+}
+.scene1 .scene1-1 img:nth-child(1) {
+	max-width: 558px;
+}
+.scene1 .scene1-1 img:nth-child(2) {
+	max-width: 878px;
+	margin-top: 15px;
+}
+.scene1 .scene1-1 img:nth-child(3) {
+	max-width: 725px;
+	margin-top: 40px;
+}
+
+.scene1 .arrow {
+	position: absolute;
+	bottom: -150px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+}
+.scene1 .arrow i {
+	color: #333;
+}
+.scene1 .arrow img {
+	position: relative;
+	display: block;
+	left: 50%;
+	margin: 15px -6px;
+}
+
+/* ==========
+	scene2 
+=============*/
+.scene2 {
+
+	background: #37354F;
+}
+
+.scene2 .points {
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	right: 0;
+	height: 50px;
+	text-align: center;
+	z-index: 10;
+}
+.scene2 .points .point {
+	display: inline-block;
+	width: 100px;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 14px;
+	text-shadow: 0 -10px 0 rgba(0,0,0,0.1);
+	color: #B8C3CC;
+}
+.scene2 .points .point div {
+	margin: 10px auto 0;
+	width: 20px;
+	height: 22px;
+	background: url('../../public/img/scene2/point.png') 0 0 no-repeat;
+	cursor: pointer;
+}
+.scene2 .points .point span {
+	opacity: 0;
+	transition: .5s;
+}
+
+.scene2 .points .selected div {
+	background-position: right top;
+}
+.scene2 .points .selected span {
+	opacity: 1;
+}
+
+.scene2 .prev {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	/*background: rgba(255,0,0,.2);*/
+	z-index: 10;
+	cursor: pointer;
+}
+.scene2 .next {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.scene2 .step {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40px;
+	right: 40px;
+}
+.scene2 .step .left {
+	position: absolute;
+	left: 0;
+	width: 50%;
+}
+.scene2 .step .right {
+	position: absolute;
+	right: 0;
+	width: 50%;
+}
+.scene2 .step .left img {
+	opacity: 0;
+	max-width: 384px;
+	height: auto;
+}
+.scene2 .scene2-1 img,
+.scene2 .step .right img {
+	display: inline-block;
+	margin-bottom: 10px;
+	max-width: 100%;
+	-webkit-transform: rotateX(90deg);
+    -webkit-transform-origin: center center 0px;
+    opacity: 0;
+}
+
+/* ==========
+	scene3 
+=============*/
+.scene3 {
+	background: #EB7159;
+}
+.scene3 .scene3-1 img,
+.scene3 .scene3-2 img {
+	display: inline-block;
+	margin-top: 26px;
+	max-width: 100%;
+	-webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: center center 0px;
+}
+
+/* ==========
+	scene4 
+=============*/
+.scene4 {
+	background: #E7F0EE;
+}
+.scene4 .item {
+	float: left;
+	padding: 20px;
+	height: 100%;
+	width: 33%;
+	border-left: 1px solid #CBD4D2;
+	box-sizing: border-box;
+}
+.scene4 .item img {
+	display: inline-block;
+	margin-top: 10px;
+	max-width: 100%;
+}
+
+/* ==========
+	scene5
+=============*/
+.scene5 {
+	background: #4BC587;
+}
+.scene5 .music {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 194px;
+}
+.scene5 .music img {
+	display: block;
+	width: 138px;
+	height: 194px;
+	margin: 0 auto;
+}
+
+.scene5 .content {
+	position: absolute;
+	top: 194px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.scene5 .content img {
+	margin-bottom: 20px;
+}
+.scene5 .content .button1 {
+	position: relative;
+	display: inline-block;
+	width: 584px;
+	height: 111px;
+	line-height: 111px;
+	margin-bottom: 20px;
+}
+.scene5 .content .line {
+	position: relative;
+	margin: 0 auto;
+	width: 124px;
+	height: 1px;
+	margin-bottom: 20px;
+	background: rgba(52, 76, 81, 0.2);
+}
+
+.scene5 .content .button2 {
+	position: relative;
+	display: inline-block;
+	width: 356px;
+	height: 111px;
+	line-height: 111px;
+}
+.scene5 .content .button2 .state1 {
+	background: #B8E6AF;
+	color: #37334D;
+}
+.scene5 .content .button2 .state2 {
+	/*background: #B8E6AF;*/
+	color: #666;
+}
+
+.scene5 .content .button2:nth-of-type(1) {
+	margin-right: 30px;
+}
+
+
+/* ============================================
+	footer
+=============================================== */
+.footer {
+	height: 392px !important;
+	overflow: hidden;
+}
+.footer .principal {
+
+	background: #344C51;
+	height: 270px;
+	padding: 60px 20px;
+	box-sizing: border-box;
+}
+.footer .principal .txt1 {
+	font-size: 30px;
+	font-weight: bolder;
+    color: #f2dfa9;
+    letter-spacing: 4px;
+	text-align: center;
+}
+.footer .principal .txt2 {
+	margin-top: 10px;
+	font-size: 20px;
+	font-style: italic;
+	color: #fff;
+	letter-spacing: 4px;
+	text-align: center;
+}
+.footer .principal .txt3 {
+
+	margin-top: 50px;
+	text-align: center;
+}
+.footer .principal .txt3 a {
+	font-size: 30px;
+	color: #fff;
+	letter-spacing: 10px;
+}
+.footer .principal .txt3 span {
+	
+	color: #4bc585;
+}
+
+
+.footer .other {
+	position: relative;
+	height: 122px;
+	background: #2E4348;
+}
+
+.footer .other .left {
+	
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	margin-top: -15px;
+	width: 123px;
+	height: 33px;
+}
+
+
+.footer .other .txt {
+	font-style: italic;
+	font-size: 11px;
+	color: #fff;
+    letter-spacing: 4px;
+    opacity: 0.7;
+}
+
+.footer .other p {
+
+	height: 122px;
+	line-height: 122px;
+    text-align: center;
+}
+.footer .other p span {
+	color: #4cc586;
+}
+
+.footer .other .right {
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	margin-top: -30px;
+	height: 70px;
+	line-height: 70px;
+	text-align: right;
+}
+
+.footer .other .right span {
+	
+	position: relative;
+	top: -35px;
+}
+
+.footer .other .right img {
+	
+	margin-left: 10px;
+	width: 94px;
+	height: 70px;
+}
+

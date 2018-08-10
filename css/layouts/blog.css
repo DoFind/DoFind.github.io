@@ -1,0 +1,219 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../font/lato-reg-webfont-webfont.eot');
+    src: url('../font/lato-reg-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../font/lato-reg-webfont-webfont.woff') format('woff'), url('../font/lato-reg-webfont-webfont.ttf') format('truetype'), url('../font/lato-reg-webfont-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('../lato-bla-webfont.eot');
+    src: url('../lato-bla-webfont.eot?#iefix') format('embedded-opentype'), url('../lato-bla-webfont.woff') format('woff'), url('../lato-bla-webfont.ttf') format('truetype'), url('../lato-bla-webfont.svg#latoblack') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 96%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: .2s;
+}
+.pure-img-responsive:hover {
+
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+#layout {
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    /*background: url('/public/img/v3/side.jpeg') center left;*/
+    background-size: cover;
+    color: #fff;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+/*.brand-title {
+    text-transform: uppercase;
+}*/
+.brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 1em 0;
+}
+
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+    font-family: "latoregular", serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #444;
+    line-height: 1.8em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    line-height: 2;
+    margin: 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-green {
+        background: #5aba59;
+    }
+    .post-category-blue {
+        background: #4d85d1;
+    }
+    .post-category-pruple {
+        background: #8156a7;
+    }
+    .post-category-red {
+        background: #df2d4f;
+    }
+    .post-category-pink {
+        background: #EB7159;
+    }
+    .post-category-deepblue {
+        background: #47456F;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    display: none;
+    font-family: "latoregular";
+    letter-spacing: 2px;
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+.footer .mQRcode {
+    width: 80px;
+    height: 80px;
+}
+
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+
+    .header {
+        margin: 80% 2em 0;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}

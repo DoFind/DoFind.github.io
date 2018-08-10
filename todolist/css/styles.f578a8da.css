@@ -6,7 +6,7 @@ body {
   height: 100%;
 }
 body {
-  background: url(img/0.jpg) center/cover;
+  background: url(../img/0.jpg) center/cover;
   font: 14px 'Helvetica';
   font-weight: 300;
   color: #4d4d4d;

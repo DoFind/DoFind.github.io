@@ -107,7 +107,7 @@ header .logo {
 header .logo a {
 	width: 123px;
 	height: 31px;
-	background: url('../../public/img/logo.png') 0 0 no-repeat;
+	background: url('../img/logo.png') 0 0 no-repeat;
 }
 header .nav {
 
@@ -351,7 +351,7 @@ header .menu-state3 .button-start .state1 {
 	margin: 10px auto 0;
 	width: 20px;
 	height: 22px;
-	background: url('../../public/img/scene2/point.png') 0 0 no-repeat;
+	background: url('../img/scene2/point.png') 0 0 no-repeat;
 	cursor: pointer;
 }
 .scene2 .points .point span {

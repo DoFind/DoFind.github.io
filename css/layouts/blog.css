@@ -5,7 +5,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; 
     color: rgb(61, 146, 201);
 }
 a:hover,
@@ -148,23 +148,29 @@ h3 {
     background: #999;
     font-size: 80%;
 }
-    .post-category-green {
+    .post-category-mongodb {
         background: #5aba59;
     }
-    .post-category-blue {
+    .post-category-front {
         background: #4d85d1;
     }
-    .post-category-pruple {
+    .post-category-vue {
         background: #8156a7;
     }
-    .post-category-red {
+    .post-category-node {
         background: #df2d4f;
     }
-    .post-category-pink {
+    .post-category-swiper {
         background: #EB7159;
     }
-    .post-category-deepblue {
+    .post-category-webpack {
+        background: #ff6633;
+    }
+    .post-category-tweenmax {
         background: #47456F;
+    }
+    .post-category-less {
+        background: #b78629;
     }
 
 .post-images {

@@ -33,6 +33,11 @@ h3 {
     font-style: normal
 }
 
+body,
+.pure-g [class*=pure-u] {
+    font-family: 'latoblack',"Microsoft YaHei","Arial","黑体","宋体",sans-serif !important;
+}
+
 /* LAYOUT CSS */
 .pure-img-responsive {
     max-width: 96%;

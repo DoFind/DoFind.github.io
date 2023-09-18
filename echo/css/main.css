@@ -1,0 +1,15 @@
+img{
+    /*-webkit-filter: grayscale(100%); !* Safari 6.0 - 9.0 *!*/
+    /*filter: grayscale(100%);*/
+}
+.grid__item-bg{
+    /*-webkit-filter: grayscale(100%); !* Safari 6.0 - 9.0 *!*/
+    /*filter: grayscale(100%);*/
+}
+.grid__toggle-text{
+    padding: .8rem;
+}
+/*.rotate{*/
+    /*transform-origin: center;*/
+    /*transform: rotate(90deg);*/
+/*}*/
